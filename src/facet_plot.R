@@ -3,7 +3,6 @@ suppressMessages(library(dplyr))
 suppressMessages(library(ggplot2))
 
 args <- commandArgs(trailingOnly = TRUE)
-# load all csv encoding files into memory and facet plot as a 6x6 grid
 results_dir = args[1]
 
 coord_dir = file.path(results_dir, 'coords')
