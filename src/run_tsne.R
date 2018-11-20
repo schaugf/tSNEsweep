@@ -18,7 +18,7 @@ tsne_results = Rtsne(data, perplexity=perplexity)
 
 write.table(tsne_results$Y, 
             file=file.path(results_dir, 'coords', paste0('tsne_coords_', str_pad(perplexity, 2, pad='0'), '.csv')),
-            row.names=F, col.names=F, quote=F)
+            row.names=F, col.names=F, quote=F, sep=',')
 
 pd <- as.data.frame(tsne_results$Y)
 names(pd) = c('tsne1', 'tsne2')
