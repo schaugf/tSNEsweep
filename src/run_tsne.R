@@ -3,7 +3,6 @@ library(ggplot2)
 library(stringr)
 
 args <- commandArgs(trailingOnly = TRUE)
-
 data.file = args[1]
 perplexity = as.numeric(args[2])
 results_dir = args[3]

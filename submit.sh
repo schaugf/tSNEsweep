@@ -2,12 +2,11 @@
 #SBATCH --job-name=treduce
 #SBATCH --ntasks=1
 #SBATCH --get-user-env
-#SBATCH --time=2:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mem=8000
 #SBATCH --err=log/error.txt
 #SBATCH --out=log/output.txt
 #SBATCH --array=5-40
-
 
 DATAFILE=$1
 SAVEDIR=$2
