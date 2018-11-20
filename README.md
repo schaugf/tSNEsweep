@@ -13,5 +13,5 @@ sbatch submit.sh etc/sample_data.csv results
 
 The output should look something like this (though not exactly as tSNE is a stochastic algorithm)
 
-![tSNEsweep][etc/tSNEsweep.png]
+![tSNEsweep](etc/tSNEsweep.png)
 
