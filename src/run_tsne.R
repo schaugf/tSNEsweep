@@ -7,7 +7,7 @@ data.file = args[1]
 perplexity = as.numeric(args[2])
 results_dir = args[3]
 
-data = read.csv(data.file)
+data = read.table(data.file, header=F, sep=',')
 
 suppressWarnings(dir.create(file.path(results_dir)))
 suppressWarnings(dir.create(file.path(results_dir, 'coords')))
