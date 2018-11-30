@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-#SBATCH --job-name=treduce
+#SBATCH --job-name=tSweep
 #SBATCH --ntasks=1
 #SBATCH --get-user-env
 #SBATCH --time=24:00:00
